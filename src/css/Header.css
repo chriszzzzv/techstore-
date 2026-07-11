@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 24px;
+    background-color: #1a1a2e;
+    color: white;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .header-buscador {
+    flex: 1;
+    max-width: 400px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .btn-sesion,
+  .btn-registro {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .btn-sesion {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn-registro {
+    background-color: #e94560;
+    color: white;
+  }
+  
+  .header-carrito {
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  .carrito-contador {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #e94560;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+  }
+  
+  .header-redes {
+    display: flex;
+    gap: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .header-redes a {
+    text-decoration: none;
+  }
+  

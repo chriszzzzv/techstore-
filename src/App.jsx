@@ -1,7 +1,9 @@
+import Header from './components/Header';
+
 function App() {
   return (
     <div>
-      <h1>TechStore Chile</h1>
+      <Header cartCount={0} />
     </div>
   );
 }

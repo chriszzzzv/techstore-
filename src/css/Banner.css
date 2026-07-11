@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.banner-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.banner-boton {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e94560;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-boton:hover {
+    background-color: #c73650;
+}

@@ -1,5 +1,13 @@
-* {
-  margin: 0;
+.contenido {
+  display: flex;
+  gap: 20px;
+  padding: 40px 24px;
+  background-color: #f4f4f8;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contenido .productos {
+  flex: 1;
   padding: 0;
-  box-sizing: border-box;
 }

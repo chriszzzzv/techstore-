@@ -1,0 +1,38 @@
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    align-self: flex-start;
+  }
+  
+  .sidebar-titulo {
+    font-size: 1.05rem;
+    color: #1a1a2e;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .sidebar-icono {
+    font-size: 1.6rem;
+  }
+  
+  .sidebar-item-titulo {
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-item-texto {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  

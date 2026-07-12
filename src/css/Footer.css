@@ -1,0 +1,61 @@
+.footer {
+    background-color: #1a1a2e;
+    color: white;
+  }
+  
+  .footer-garantias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px 24px;
+    background-color: #16213e;
+    font-size: 0.95rem;
+  }
+  
+  .garantia-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .garantia-icono {
+    font-size: 1.3rem;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px 60px;
+  }
+  
+  .footer-columna h4 {
+    margin-bottom: 10px;
+    color: #e94560;
+  }
+  
+  .footer-columna p {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #ccc;
+  }
+  
+  .footer-redes {
+    display: flex;
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .footer-redes a {
+    text-decoration: none;
+  }
+  
+  .footer-derechos {
+    text-align: center;
+    padding: 14px;
+    font-size: 0.85rem;
+    color: #999;
+    border-top: 1px solid #2a2a4a;
+  }

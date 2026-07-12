@@ -1,6 +1,7 @@
 import '../css/Header.css';
+import SearchBar from './SearchBar';
 
-function Header({ cartCount }) {
+function Header({ cartCount, busqueda, onBuscar }) {
   return (
     <header className="header">
       <div className="header-logo">
@@ -8,11 +9,7 @@ function Header({ cartCount }) {
         <span className="logo-texto">TechStore Chile</span>
       </div>
 
-      <input
-        type="text"
-        className="header-buscador"
-        placeholder="Buscar productos..."
-      />
+      <SearchBar busqueda={busqueda} onBuscar={onBuscar} />
 
       <div className="header-acciones">
         <button className="btn-sesion">Iniciar Sesión</button>

@@ -1,12 +1,12 @@
 [
-    { "id": 1, "nombre": "Notebook Lenovo IdeaPad 15\"", "precio": 449990, "valoracion": 4, "imagen": "/img/notebook.jpg" },
-    { "id": 2, "nombre": "Mouse Gamer Logitech G203", "precio": 19990, "valoracion": 5, "imagen": "/img/mouse.jpg" },
-    { "id": 3, "nombre": "Monitor Samsung 24\" FHD", "precio": 129990, "valoracion": 4, "imagen": "/img/monitor.jpg" },
-    { "id": 4, "nombre": "SSD Kingston 1TB NVMe", "precio": 64990, "valoracion": 5, "imagen": "/img/ssd.jpg" },
+    { "id": 1, "nombre": "Notebook HP Gamer Omen 16\"", "precio": 449990, "valoracion": 4, "imagen": "/img/notebook.jpg" },
+    { "id": 2, "nombre": "Mouse Maxell BLU2", "precio": 19990, "valoracion": 5, "imagen": "/img/mouse.jpg" },
+    { "id": 3, "nombre": "Monitor Samsung Odyssey Oled 27\" QHD", "precio": 129990, "valoracion": 4, "imagen": "/img/monitor.jpg" },
+    { "id": 4, "nombre": "Unidad SSD 4TB T710 SSD ", "precio": 64990, "valoracion": 5, "imagen": "/img/ssd.jpg" },
     { "id": 5, "nombre": "Memoria RAM Corsair 16GB DDR4", "precio": 42990, "valoracion": 4, "imagen": "/img/ram.jpg" },
-    { "id": 6, "nombre": "Teclado Mecánico Redragon Kumara", "precio": 34990, "valoracion": 5, "imagen": "/img/teclado.jpg" },
-    { "id": 7, "nombre": "Audífonos HyperX Cloud II", "precio": 79990, "valoracion": 5, "imagen": "/img/audifonos.jpg" },
-    { "id": 8, "nombre": "Cámara Web Logitech C920", "precio": 59990, "valoracion": 4, "imagen": "/img/camara.jpg" },
-    { "id": 9, "nombre": "Impresora HP Ink Advantage", "precio": 89990, "valoracion": 3, "imagen": "/img/impresora.jpg" },
+    { "id": 6, "nombre": "Teclado Gamer Mecánico Inalámbrico Aula F75 RGB Switches ", "precio": 34990, "valoracion": 5, "imagen": "/img/teclado.jpg" },
+    { "id": 7, "nombre": "Audifonos Bluetooth JBL Wave Beam 2 TWS Negro", "precio": 79990, "valoracion": 5, "imagen": "/img/audifonos.jpg" },
+    { "id": 8, "nombre": "Cámara DJI Osmo Pocket 3 Creator Combo ", "precio": 59990, "valoracion": 4, "imagen": "/img/camara.jpg" },
+    { "id": 9, "nombre": "Impresora 3D Creality K2 ", "precio": 89990, "valoracion": 3, "imagen": "/img/impresora.jpg" },
     { "id": 10, "nombre": "Tablet Samsung Galaxy Tab A9", "precio": 149990, "valoracion": 4, "imagen": "/img/tablet.jpg" }
 ]

@@ -1,17 +1,19 @@
 import '../css/ProductCard.css';
 
-function ProductCard({ producto }) {
-const estrellas = '★'.repeat(producto.valoracion) + '☆'.repeat(5 - producto.valoracion);
+function ProductCard({ producto, onAgregar }) {
+  const estrellas = '★'.repeat(producto.valoracion) + '☆'.repeat(5 - producto.valoracion);
 
-return (
+  return (
     <div className="card">
-    <img src={producto.imagen} alt={producto.nombre} className="card-imagen" />
-    <h3 className="card-nombre">{producto.nombre}</h3>
-    <span className="card-estrellas">{estrellas}</span>
-    <p className="card-precio">${producto.precio.toLocaleString('es-CL')}</p>
-    <button className="card-boton">Agregar al carrito</button>
+      <img src={producto.imagen} alt={producto.nombre} className="card-imagen" />
+      <h3 className="card-nombre">{producto.nombre}</h3>
+      <span className="card-estrellas">{estrellas}</span>
+      <p className="card-precio">${producto.precio.toLocaleString('es-CL')}</p>
+      <button className="card-boton" onClick={onAgregar}>
+        Agregar al carrito
+      </button>
     </div>
-);
+  );
 }
 
 export default ProductCard;

@@ -1,0 +1,19 @@
+.productos {
+    padding: 40px 24px;
+    background-color: #f4f4f8;
+  }
+  
+  .productos-titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 28px;
+  }
+  
+  .productos-grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }

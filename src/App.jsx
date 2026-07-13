@@ -5,14 +5,20 @@ import Banner from './components/Banner';
 import ProductList from './components/ProductList';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
+import Cart from './components/Cart';
 import productos from './data/productos.json';
 
 function App() {
-  const [cartCount, setCartCount] = useState(0);
+  const [carrito, setCarrito] = useState([]);
+  const [mostrarCarrito, setMostrarCarrito] = useState(false);
   const [busqueda, setBusqueda] = useState('');
 
-  const agregarAlCarrito = () => {
-    setCartCount(cartCount + 1);
+  const agregarAlCarrito = (producto) => {
+    setCarrito([...carrito, producto]);
+  };
+
+  const quitarDelCarrito = (indice) => {
+    setCarrito(carrito.filter((_, i) => i !== indice));
   };
 
   const productosFiltrados = productos.filter((producto) =>
@@ -21,7 +27,15 @@ function App() {
 
   return (
     <div>
-      <Header cartCount={cartCount} busqueda={busqueda} onBuscar={setBusqueda} />
+      <Header
+        cartCount={carrito.length}
+        busqueda={busqueda}
+        onBuscar={setBusqueda}
+        onToggleCarrito={() => setMostrarCarrito(!mostrarCarrito)}
+      />
+      {mostrarCarrito && (
+        <Cart carrito={carrito} onQuitar={quitarDelCarrito} />
+      )}
       <Navbar />
       <Banner />
       <div className="contenido">

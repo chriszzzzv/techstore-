@@ -1,7 +1,7 @@
 import '../css/Header.css';
 import SearchBar from './SearchBar';
 
-function Header({ cartCount, busqueda, onBuscar }) {
+function Header({ cartCount, busqueda, onBuscar, onToggleCarrito }) {
   return (
     <header className="header">
       <div className="header-logo">
@@ -15,10 +15,10 @@ function Header({ cartCount, busqueda, onBuscar }) {
         <button className="btn-sesion">Iniciar Sesión</button>
         <button className="btn-registro">Registrarse</button>
 
-        <div className="header-carrito">
-          🛒
-          <span className="carrito-contador">{cartCount}</span>
-        </div>
+        <div className="header-carrito" onClick={onToggleCarrito}>
+  🛒
+  <span className="carrito-contador">{cartCount}</span>
+</div>
 
         <div className="header-redes">
           <a href="#" aria-label="Facebook">📘</a>

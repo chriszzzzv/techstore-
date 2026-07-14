@@ -35,4 +35,20 @@
     font-size: 0.85rem;
     color: #666;
   }
+
+  @media (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      padding: 16px;
+    }
+
+    .sidebar-item {
+      margin-bottom: 14px;
+    }
+  }
   

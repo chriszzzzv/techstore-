@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #1a1a2e;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .toast {
   position: fixed;
   bottom: 24px;
@@ -11,6 +29,8 @@
   font-size: 0.95rem;
   z-index: 200;
   animation: toast-entrada 0.3s ease;
+  max-width: calc(100% - 32px);
+  text-align: center;
 }
 
 @keyframes toast-entrada {
@@ -36,13 +56,28 @@
 .contenido .productos {
   flex: 1;
   padding: 0;
+  min-width: 0;
 }
+
 @media (max-width: 900px) {
   .contenido {
     flex-direction: column;
+    padding: 24px 16px;
   }
 
   .contenido .sidebar {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenido {
+    padding: 16px 12px;
+    gap: 16px;
+  }
+
+  .toast {
+    font-size: 0.85rem;
+    padding: 10px 16px;
   }
 }

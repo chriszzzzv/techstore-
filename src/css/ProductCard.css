@@ -54,3 +54,22 @@
 .card-boton:hover {
     background-color: #c73650;
 }
+
+@media (max-width: 600px) {
+  .card {
+    padding: 14px;
+  }
+
+  .card-imagen {
+    height: 140px;
+  }
+
+  .card-nombre {
+    font-size: 0.95rem;
+    min-height: auto;
+  }
+
+  .card-precio {
+    font-size: 1.1rem;
+  }
+}

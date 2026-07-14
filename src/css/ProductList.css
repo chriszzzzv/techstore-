@@ -1,55 +1,76 @@
 .productos {
-    padding: 40px 24px;
-    background-color: #f4f4f8;
+  padding: 40px 24px;
+  background-color: #f4f4f8;
+}
+
+.productos-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.productos-titulo {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+}
+
+.productos-orden {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.productos-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productos-vacio {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  padding: 40px 0;
+}
+
+@media (max-width: 1024px) {
+  .productos-grilla {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+}
+
+@media (max-width: 600px) {
+  .productos {
+    padding: 16px 0;
+  }
+
   .productos-encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 28px;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
   }
 
   .productos-titulo {
-    font-size: 1.8rem;
-    color: #1a1a2e;
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   .productos-orden {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: white;
-    font-size: 0.9rem;
-    color: #1a1a2e;
-    cursor: pointer;
-  }
-  
-  .productos-grilla {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .productos-vacio {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #666;
-    padding: 40px 0;
-  }
-  @media (max-width: 900px) {
-    .productos-grilla {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .productos-grilla {
-      grid-template-columns: 1fr;
-    }
+    width: 100%;
   }
 
+  .productos-grilla {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

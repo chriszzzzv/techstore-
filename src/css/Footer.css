@@ -59,6 +59,12 @@
     color: #999;
     border-top: 1px solid #2a2a4a;
   }
+  @media (max-width: 900px) {
+    .footer-info {
+      padding: 28px 24px;
+    }
+  }
+
   @media (max-width: 600px) {
     .footer-garantias {
       flex-direction: column;

@@ -92,14 +92,36 @@
   }
   
   @media (max-width: 600px) {
+    .header {
+      padding: 10px 12px;
+      gap: 10px;
+    }
+
+    .header-logo {
+      font-size: 1rem;
+    }
+
+    .logo-texto {
+      display: none;
+    }
+
+    .header-acciones {
+      gap: 8px;
+    }
+
     .header-redes {
       display: none;
     }
-  
+
     .btn-sesion,
     .btn-registro {
-      padding: 6px 10px;
-      font-size: 0.8rem;
+      padding: 6px 8px;
+      font-size: 0.75rem;
+    }
+
+    .header-buscador {
+      font-size: 0.85rem;
+      padding: 7px 12px;
     }
   }
   

@@ -12,9 +12,12 @@ function App() {
   const [carrito, setCarrito] = useState([]);
   const [mostrarCarrito, setMostrarCarrito] = useState(false);
   const [busqueda, setBusqueda] = useState('');
+  const [toast, setToast] = useState('');
 
   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]);
+    setToast(`✓ ${producto.nombre} agregado al carrito`);
+    setTimeout(() => setToast(''), 2000);
   };
 
   const quitarDelCarrito = (indice) => {
@@ -36,6 +39,7 @@ function App() {
       {mostrarCarrito && (
         <Cart carrito={carrito} onQuitar={quitarDelCarrito} />
       )}
+      {toast && <div className="toast">{toast}</div>}
       <Navbar />
       <Banner />
       <div className="contenido">

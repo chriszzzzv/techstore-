@@ -139,6 +139,9 @@ Rutas disponibles: `GET /api/productos` y `POST /api/productos` (detalle en `bac
 ![Base de datos en Compass](capturas/compass.png)
 ```
 ## Prompt 
+"Arregla las rutas de las imágenes para que funcionen en GitHub Pages (subcarpeta /techstore-/) y mejora el CSS responsive para que se vea bien en celular, tablet y escritorio"
+"implementa un buscador con filter() y onChange, y un carrito con useState"
+"No me carga la imagen del banner. El archivo se llama Banner.png pero en el código dice banner.jpg. ¿Qué está mal?"
 
 
 ## Dificultades encontradas

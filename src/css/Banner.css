@@ -50,3 +50,20 @@
 .banner-boton:hover {
     background-color: #c73650;
 }
+@media (max-width: 600px) {
+    .banner {
+      height: 300px;
+    }
+  
+    .banner-contenido {
+      padding: 0 24px;
+    }
+  
+    .banner-titulo {
+      font-size: 1.6rem;
+    }
+  
+    .banner-subtitulo {
+      font-size: 0.95rem;
+    } 
+}

@@ -78,4 +78,28 @@
   .header-redes a {
     text-decoration: none;
   }
+  @media (max-width: 900px) {
+    .header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .header-buscador {
+      order: 3;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header-redes {
+      display: none;
+    }
+  
+    .btn-sesion,
+    .btn-registro {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+  }
   

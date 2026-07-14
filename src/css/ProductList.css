@@ -24,4 +24,15 @@
     color: #666;
     padding: 40px 0;
   }
+  @media (max-width: 900px) {
+    .productos-grilla {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .productos-grilla {
+      grid-template-columns: 1fr;
+    }
+  }
 

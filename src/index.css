@@ -11,3 +11,12 @@
   flex: 1;
   padding: 0;
 }
+@media (max-width: 900px) {
+  .contenido {
+    flex-direction: column;
+  }
+
+  .contenido .sidebar {
+    width: 100%;
+  }
+}

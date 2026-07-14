@@ -3,11 +3,28 @@
     background-color: #f4f4f8;
   }
   
+  .productos-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
   .productos-titulo {
-    text-align: center;
     font-size: 1.8rem;
     color: #1a1a2e;
-    margin-bottom: 28px;
+  }
+
+  .productos-orden {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 0.9rem;
+    color: #1a1a2e;
+    cursor: pointer;
   }
   
   .productos-grilla {

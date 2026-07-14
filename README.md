@@ -1,11 +1,10 @@
 # TechStore Chile
 
-Página principal de una tienda virtual de tecnología, desarrollada como proyecto final para la asignatura **Programación Front-End** (Ingeniería en Informática, INACAP).
+Página principal de una tienda virtual de tecnología, desarrollada como proyecto final para la asignatura **Programación Front-End** Ingeniería en Informática, INACAP.
 
 ## Integrantes
 
-- Christopher [COMPLETAR APELLIDO]
-- [COMPLETAR: agregar más integrantes si corresponde]
+- Christopher velasquez
 
 ## Objetivo
 
@@ -66,13 +65,29 @@ techstore/
 ### Frontend
 
 ```bash
-git clone https://github.com/[COMPLETAR_USUARIO]/techstore.git
+git clone https://github.com/chriszzzzv/techstore-.git
 cd techstore
 npm install
 npm run dev
 ```
 
 Abrir `http://localhost:5173` en el navegador.
+
+### Publicar en GitHub Pages
+
+El proyecto está configurado para desplegarse en:
+
+**https://chriszzzzv.github.io/techstore-/**
+
+```bash
+npm run deploy
+```
+
+Esto ejecuta `vite build` y sube la carpeta `dist` a la rama `gh-pages` con el paquete `gh-pages`.
+
+En GitHub: **Settings → Pages → Source: Deploy from branch → gh-pages / root**.
+
+Las imágenes de `public/img/` usan rutas relativas y `import.meta.env.BASE_URL` para funcionar tanto en local como en la subcarpeta de GitHub Pages (`base: '/techstore-/'` en `vite.config.js`).
 
 ### Backend (opcional)
 
@@ -123,6 +138,8 @@ Rutas disponibles: `GET /api/productos` y `POST /api/productos` (detalle en `bac
 ![Carrito abierto](capturas/carrito.png)
 ![Base de datos en Compass](capturas/compass.png)
 ```
+## Prompt 
+
 
 ## Dificultades encontradas
 
@@ -135,3 +152,6 @@ Rutas disponibles: `GET /api/productos` y `POST /api/productos` (detalle en `bac
 ## Conclusiones
 
 El proyecto permitió aplicar de forma integrada los conceptos centrales de React: la división de una interfaz en componentes reutilizables, el flujo unidireccional de datos (los datos bajan por props, los eventos suben mediante funciones) y el renderizado dinámico a partir de datos externos. La separación entre datos (`productos.json`) y componentes demostró su valor al agregar funcionalidades como el buscador y el ordenamiento sin modificar las tarjetas. Finalmente, la construcción del backend con Express y Mongoose mostró cómo se estructura una API REST y dejó la base lista para conectar el frontend a una base de datos real en una siguiente etapa.
+
+## capturas 
+image.png

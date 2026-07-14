@@ -12,11 +12,12 @@ function Cart({ carrito, onQuitar }) {
         <>
           <ul className="cart-lista">
             {carrito.map((producto, indice) => (
-              <li key={indice} className="cart-item">
-                <span>{producto.nombre}</span>
-                <span>${producto.precio.toLocaleString('es-CL')}</span>
-                <button className="cart-quitar" onClick={() => onQuitar(indice)}>✕</button>
-              </li>
+            <li key={indice} className="cart-item">
+            <img src={producto.imagen} alt={producto.nombre} className="cart-item-img" />
+            <span className="cart-item-nombre">{producto.nombre}</span>
+            <span>${producto.precio.toLocaleString('es-CL')}</span>
+            <button className="cart-quitar" onClick={() => onQuitar(indice)}>✕</button>
+            </li>
             ))}
           </ul>
           <p className="cart-total">Total: ${total.toLocaleString('es-CL')}</p>

@@ -51,4 +51,16 @@
     margin-top: 12px;
     color: #1a1a2e;
   }
-  
+  .cart-item-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.cart-item-nombre {
+    flex: 1;
+}
